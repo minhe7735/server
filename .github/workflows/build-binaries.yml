@@ -26,9 +26,6 @@ jobs:
         strategy:
             matrix:
                 target:
-                    - 'linux-arm64'
-                    - 'linux-x64'
-                    - 'win-arm64'
                     - 'win-x64'
             fail-fast: false
 
