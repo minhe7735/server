@@ -11,7 +11,7 @@ const track = (info) => {
 			select.ENABLE_FLAC ? 0 : 1,
 			select.ENABLE_FLAC ? 1 : 2
 		);
-		logger.info("pyncmd", url);
+		logger.info("pyncmd: ", url);
 	return request('GET', url)
 		.then((response) => response.json())
 		.then((jsonBody) => {
