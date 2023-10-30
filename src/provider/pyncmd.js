@@ -20,8 +20,10 @@ const track = (info) => {
 				typeof jsonBody === 'object' &&
 				'code' in jsonBody &&
 				jsonBody.code !== 200
-			)
+			){
 				return Promise.reject();
+			}
+				
 
 			const matched = jsonBody.data.find((song) => song.id === info.id);
 			if (matched && matched.url) return matched.url;
