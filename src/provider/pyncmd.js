@@ -1,6 +1,8 @@
 const select = require('./select');
 const request = require('../request');
 const { getManagedCacheStorage } = require('../cache');
+const { logScope } = require('../logger');
+const logger = logScope('provider/match');
 
 const track = (info) => {
 	const url =
